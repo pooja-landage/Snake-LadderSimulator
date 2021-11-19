@@ -9,5 +9,6 @@ namespace SnakeLadder
     internal class SnakeAndLandder
     {
         int player1 = 0;
+        
     }
 }

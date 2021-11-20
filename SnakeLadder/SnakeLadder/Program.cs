@@ -10,29 +10,6 @@ namespace SnakeLadder
         public const int LADDER = 3;
         public static void Main(string[] args)
         {
-            /*static void Main(string[] args)
-            {
-
-                int empHrs = 0;
-                int empWages = 0;
-                Random random = new Random();
-
-                int empCheck = random.Next(0, 3);
-                switch (empCheck)
-                {
-                    case IS_PART_TIME:
-                        empHrs = 8;
-                        break;
-                    case IS_FULL_TIME:
-                        empHrs = 16;
-                        break;
-                    default:
-                        empHrs = 0;
-                        break;
-                }
-                empWages = empHrs * EMP_RATE_PER_HOUR;
-                Console.WriteLine("\t EmpWages :" + empWages);
-            }*/
             int player1 = 0;
             Console.WriteLine("=======================================================================================================================");
             Console.WriteLine("\t    \t     \t       \t---------Welcome to snake and Ladder Game------------");

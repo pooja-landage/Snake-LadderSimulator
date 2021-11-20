@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace SnakeLadder
 {
-    internal class SnakeAndLandder
+    public class SnakeAndLandder
     {
-        int player1 = 0;
-        
+       public int ROLE_DICE = 0;
+        public int LADDER= 2;
+        public int SNAKE_BITE = 1;
+
     }
 }

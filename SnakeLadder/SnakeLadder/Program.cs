@@ -9,7 +9,7 @@ namespace SnakeLadder
         {
             int player1 = 0;
             int player_pos = 0;
-            int Winning_pos = 100;
+          const int Winning_pos = 100;
 
             Console.WriteLine("=======================================================================================================================");
             Console.WriteLine("\t    \t     \t       \t---------Welcome to snake and Ladder Game------------");
@@ -33,7 +33,14 @@ namespace SnakeLadder
                     case 2:
                         Console.WriteLine("Player Can go forward with Ladder");
                         player_pos += dice;
-                        player_pos++;
+                      //  player_pos++;
+                        //Console.WriteLine("Current position of player is :" + "  " + player_pos);
+                        //
+                        if (player_pos > 100)
+                        {
+                            Console.WriteLine("current position of player go above 100 so we can not go for next position");
+                            player_pos -= dice;
+                        }
                         Console.WriteLine("Current position of player is :" + "  " + player_pos);
                         break;
 
@@ -55,8 +62,11 @@ namespace SnakeLadder
 
                 }
             }
+            if(player_pos == Winning_pos)
+            {
+                Console.WriteLine("Player won the game {0}", player_pos);
+            }
             
-            Console.WriteLine("Player won the game {0}", player_pos);
         }
     }
 

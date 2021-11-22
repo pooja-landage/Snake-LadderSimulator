@@ -7,9 +7,10 @@ namespace SnakeLadder
     {
        public static void Main(string[] args)
         {
-            int player1 = 0;
+            
             int player_pos = 0;
           const int Winning_pos = 100;
+            int Dice_Count = 0;
 
             Console.WriteLine("=======================================================================================================================");
             Console.WriteLine("\t    \t     \t       \t---------Welcome to snake and Ladder Game------------");
@@ -19,6 +20,7 @@ namespace SnakeLadder
 
             while(player_pos < Winning_pos)
             {
+                Dice_Count++;
                 int dice = rnd.Next(1, 7);
                 int choice = rnd.Next(1, 4);
                 Console.WriteLine("Player Dice value {0} ", dice);
@@ -33,9 +35,7 @@ namespace SnakeLadder
                     case 2:
                         Console.WriteLine("Player Can go forward with Ladder");
                         player_pos += dice;
-                      //  player_pos++;
-                        //Console.WriteLine("Current position of player is :" + "  " + player_pos);
-                        //
+                     
                         if (player_pos > 100)
                         {
                             Console.WriteLine("current position of player go above 100 so we can not go for next position");
@@ -61,6 +61,7 @@ namespace SnakeLadder
                         break;
 
                 }
+                 Console.WriteLine("No of time Dice Roll : " + Dice_Count );
             }
             if(player_pos == Winning_pos)
             {

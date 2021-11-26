@@ -10,7 +10,7 @@ namespace SnakeLadder
             Console.WriteLine("=======================================================================================================================");
             Console.WriteLine("\t    \t     \t       \t---------Welcome to snake and Ladder Game------------");
             Console.WriteLine("\n");
-            Console.Write("\t    \t     \t       \t     \t   Enter value of Player: ");
+            Console.Write("\t    \t     \t       \t     \t   Enter name of Player: ");
             
             string Name = Console.ReadLine();
             Random rnd = new Random();
